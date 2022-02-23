@@ -1,0 +1,58 @@
+/*Selector universal*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+image{
+    width: 100%;
+}
+
+/*Encabezado*/
+li{
+    display: list-item;
+}
+ul{
+    list-style-type: none;
+}
+
+ion-icon{
+    width: 2rem;
+    height: 2rem;
+    margin: 10px;
+}
+
+.encabezado{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    justify-content:space-between;
+    padding: 20px;
+    align-items: center;
+    position:fixed;
+    z-index: 100;
+    background-color: rgba(241, 253, 210, 0.2);
+}
+
+.opciones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.ingreso{
+    border-radius: 60px;
+    font-size: 15px;
+    width: 50%;
+    height: 40px;
+    border-style: none;
+}
+
+.imagenFondo{
+    display: block;
+}
