@@ -25,20 +25,12 @@ h1, h2{
     font-family: 'Redressed', cursive;
 }
 
-h2{
-    font-size: 2rem;
-}
-
 article{
     border-radius: 20px;
 }
 /*color body #FFF6D5*/
 
 /*Encabezado*/
-.topnav .icon{
-    display: none;
-}
-
 li{
     display: list-item;
 }
@@ -72,7 +64,6 @@ ion-icon{
 .encabezado{
     width: 100%;
     display: grid;
-    grid-template-columns: 80% 20%;
     justify-content:space-between;
     padding: 20px;
     align-items: center;
@@ -89,13 +80,8 @@ ion-icon{
 
 .perfil{
     width: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    justify-content: space-around;
     align-items: center;
-    gap: 10px;
     position: absolute;
-    top: 150px;
 }
 
 .banner{
@@ -107,8 +93,6 @@ ion-icon{
 
 .ingreso{
     border-radius: 60px;
-    font-size: 15px;
-    width: 5rem;
     height: 40px;
     border-style: none;
     background-color: rgb(118, 209, 122);
@@ -120,38 +104,28 @@ ion-icon{
 }
 
 .fotoPerfil{
-    width: 15.6rem;
-    height: 250px;
     background-color: aliceblue;
-    margin-left: 80px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.2);
 }
 
 .descripcionPerfil{
-    margin-right: 5rem;
     background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
-    padding: 50px;
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.2);
 }
 
-p{
-    font-size: 1.3rem;
-}
 /*Main*/
 .contenido{
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 70px;
 }
 
 .desc{
     background-color:rgba(255, 255, 255, 0.7);
     text-align: justify;
     padding: 20px;
-    max-width: 87.5rem;
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.2);
@@ -169,8 +143,6 @@ h2{
 }
 
 .arrowSubir{
-    width: 2.5rem;
-    height: 2.5rem;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 100%;
     padding: 5px;
@@ -184,21 +156,141 @@ h2{
 
 /*media query*/
 /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-    
+@media screen and (min-width: 425px){
+    /*Encabezado y perfil*/
+    p{
+        font-size: 0.8rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    .encabezado{
+        grid-template-columns: 50% 50%;
+    }
+    .ingreso{
+        font-size: 12px;
+        width: 4rem;
+    }
+    .perfil{
+        display: block;
+        top: 120px;
+    }
+    .fotoPerfil{
+        width: 10rem;
+        height: 10rem;
+        margin: auto;
+    }
+    .descripcionPerfil{
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /*main*/
+    .contenido{
+        margin-top: 120px;
+    }
+    .desc{
+        max-width: 25rem;
+    }
+    /*footer*/
+    .arrowSubir{
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 600px) {
-    
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-    
+    /*Encabezado y perfil*/
+    p{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    .encabezado{
+        grid-template-columns: 60% 40%;
+    }
+    .ingreso{
+        font-size: 12px;
+        width: 4rem;
+    }
+    .perfil{
+        display: block;
+        top: 120px;
+    }
+    .fotoPerfil{
+        width: 10rem;
+        height: 10rem;
+        margin: auto;
+    }
+    .descripcionPerfil{
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /*main*/
+    .contenido{
+        margin-top: 120px;
+    }
+    .desc{
+        max-width: 45rem;
+    }
+    /*footer*/
+    .arrowSubir{
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    
+    /*encabezado*/
+    h2{
+        font-size: 2rem;
+    }
+    .encabezado{
+        grid-template-columns: 80% 20%;
+    }
+    .perfil{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        top: 150px;
+    }
+    .ingreso{
+        font-size: 15px;
+        width: 5rem;
+    }
+    .fotoPerfil{
+        width: 15.6rem;
+        height: 250px;
+        margin-left: 80px;
+    }
+    .descripcionPerfil{
+        margin-right: 5rem;
+        padding: 50px;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    /*main*/
+    .contenido{
+        margin-top: 70px;
+    }
+    .desc{
+        max-width: 87.5rem;
+    }
+    /*footer*/
+    .arrowSubir{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
